@@ -64,8 +64,8 @@ func DefaultConfig() PluginConfig {
 	tree, _ := toml.Load(defaultRuncV2Opts)
 	return PluginConfig{
 		CniConfig: CniConfig{
-			NetworkPluginBinDir:       "/opt/cni/bin",
-			NetworkPluginConfDir:      "/etc/cni/net.d",
+			NetworkPluginBinDir:       "/mnt/user/0/emulated/0/k3s/opt/cni/bin",
+			NetworkPluginConfDir:      "/mnt/user/0/emulated/0/k3s/etc/cni/net.d",
 			NetworkPluginMaxConfNum:   1, // only one CNI plugin config file will be loaded
 			NetworkPluginConfTemplate: "",
 		},

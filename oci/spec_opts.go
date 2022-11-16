@@ -453,7 +453,7 @@ func WithHostResolvconf(_ context.Context, _ Client, _ *containers.Container, s 
 	s.Mounts = append(s.Mounts, specs.Mount{
 		Destination: "/etc/resolv.conf",
 		Type:        "bind",
-		Source:      "/etc/resolv.conf",
+		Source:      "/mnt/user/0/emulated/0/k3s/etc/resolv.conf",
 		Options:     []string{"rbind", "ro"},
 	})
 	return nil
@@ -464,7 +464,7 @@ func WithHostLocaltime(_ context.Context, _ Client, _ *containers.Container, s *
 	s.Mounts = append(s.Mounts, specs.Mount{
 		Destination: "/etc/localtime",
 		Type:        "bind",
-		Source:      "/etc/localtime",
+		Source:      "/mnt/user/0/emulated/0/k3s/etc/localtime",
 		Options:     []string{"rbind", "ro"},
 	})
 	return nil

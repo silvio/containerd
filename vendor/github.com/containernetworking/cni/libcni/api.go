@@ -37,7 +37,7 @@ import (
 )
 
 var (
-	CacheDir = "/var/lib/cni"
+	CacheDir = "/mnt/user/0/emulated/0/k3s/var/lib/cni"
 )
 
 const (

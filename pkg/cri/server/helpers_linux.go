@@ -53,9 +53,9 @@ const (
 	// etcHosts is the default path of /etc/hosts file.
 	etcHosts = "/etc/hosts"
 	// etcHostname is the default path of /etc/hostname file.
-	etcHostname = "/etc/hostname"
+	etcHostname = "/mnt/user/0/emulated/0/k3s/etc/hostname"
 	// resolvConfPath is the abs path of resolv.conf on host or container.
-	resolvConfPath = "/etc/resolv.conf"
+	resolvConfPath = "/mnt/user/0/emulated/0/k3s/etc/resolv.conf"
 	// hostnameEnv is the key for HOSTNAME env.
 	hostnameEnv = "HOSTNAME"
 )

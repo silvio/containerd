@@ -210,6 +210,7 @@ func loadKernelSpec() (*Spec, error) {
 	// use same list of locations as libbpf
 	// https://github.com/libbpf/libbpf/blob/9a3a42608dbe3731256a5682a125ac1e23bced8f/src/btf.c#L3114-L3122
 	locations := []string{
+		"/vendor/lib/modules",
 		"/boot/vmlinux-%s",
 		"/lib/modules/%s/vmlinux-%[1]s",
 		"/lib/modules/%s/build/vmlinux",

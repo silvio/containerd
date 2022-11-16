@@ -18,8 +18,8 @@ package cni
 
 const (
 	CNIPluginName        = "cni"
-	DefaultNetDir        = "/etc/cni/net.d"
-	DefaultCNIDir        = "/opt/cni/bin"
+	DefaultNetDir        = "/mnt/user/0/emulated/0/k3s/etc/cni/net.d"
+	DefaultCNIDir        = "/mnt/user/0/emulated/0/k3s/opt/cni/bin"
 	DefaultMaxConfNum    = 1
 	VendorCNIDirTemplate = "%s/opt/%s/bin"
 	DefaultPrefix        = "eth"

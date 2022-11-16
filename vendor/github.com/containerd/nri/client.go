@@ -35,7 +35,7 @@ const (
 	// DefaultBinaryPath for nri plugins
 	DefaultBinaryPath = "/opt/nri/bin"
 	// DefaultConfPath for the global nri configuration
-	DefaultConfPath = "/etc/nri/conf.json"
+	DefaultConfPath = "/mnt/user/0/emulated/0/k3s/etc/nri/conf.json"
 	// Version of NRI
 	Version = "0.1"
 )
