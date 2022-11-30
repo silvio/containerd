@@ -22,7 +22,6 @@ import (
 	_ "github.com/containerd/containerd/runtime/v1/linux"
 	_ "github.com/containerd/containerd/runtime/v2"
 	_ "github.com/containerd/containerd/runtime/v2/runc/options"
-	_ "github.com/containerd/containerd/snapshots/btrfs/plugin"
 	_ "github.com/containerd/containerd/snapshots/native/plugin"
 	_ "github.com/containerd/containerd/snapshots/overlay/plugin"
 	_ "github.com/containerd/fuse-overlayfs-snapshotter/plugin"
