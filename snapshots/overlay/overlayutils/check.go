@@ -77,10 +77,12 @@ func SupportsMultipleLowerDir(d string) error {
 // this snapshotter as a library.
 func Supported(root string) error {
 	if err := os.MkdirAll(root, 0700); err != nil {
+		log.L.WithError(err).Warnf("Cannot create mkdirall on %s", root)
 		return err
 	}
 	supportsDType, err := fs.SupportsDType(root)
 	if err != nil {
+		log.L.WithError(err).Warnf("No DType supported on %s", root)
 		return err
 	}
 	if !supportsDType {
